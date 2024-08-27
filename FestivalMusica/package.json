@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:dist/css ",
+    "dev": "gulp dev"
   },
   "keywords": [
     "SASS",
@@ -13,7 +14,10 @@
   "author": "Bergerat Santiago",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "type": "module",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
     "sass": "1.77.8"
   }
 }

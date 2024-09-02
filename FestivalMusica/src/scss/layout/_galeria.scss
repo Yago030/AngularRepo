@@ -1,0 +1,69 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.galeria{
+
+    @include m.contenedor;
+
+    &-imagenes{
+        @include m.grid(1,2rem);
+
+        @include m.telefono{
+            @include m.grid(2,2rem);
+        }
+        @include m.tablet{
+            @include m.grid(3,2rem);
+        }
+        @include m.desktop{
+            @include m.grid(4,2rem);
+        }
+        img{
+            height: 20rem;
+            object-fit: cover;
+        }
+
+    }
+}
+
+.modal{
+    position: fixed;
+   inset: 0;
+    background-color: rgba(v.$negro, 0.5);
+    
+    display:grid; //para centrarlo con est disply y usar su atrinbuto
+    place-items: center;
+
+    animation: fadeIn ease-in 0.5s;
+    &.fadeOut {
+        animation: fadeOut ease-in 0.5s;
+    }
+
+    img{
+        max-width: 100rem;
+        
+    }
+}
+
+
+@keyframes fadeIn {  //aca con keyfame la creamos nosotros mismos
+    0%{
+        opacity: 0;
+    }
+  
+    100%{
+       opacity: 1;
+
+    }
+}
+
+@keyframes fadeOut{  //aca con keyfame la creamos nosotros mismos
+    0%{
+        opacity: 1;
+    }
+  
+    100%{
+       opacity: 0;
+
+    }
+}

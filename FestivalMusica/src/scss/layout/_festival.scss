@@ -5,9 +5,7 @@
     @include m.contenedor;
 
     @include m.tablet{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
+      @include m.grid(2, 5rem)
     }
 
     

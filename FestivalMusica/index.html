@@ -2,74 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival De Música</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/app.css">
-    <title>Festival De Música</title>
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-      
     <header class="header">
-            <div class="contenedor contenido-header">
-                <h1>Techno & EDM Festival</h1>
+        <div class="contenedor contenido-header">
+            <h1>Techno & EDM Festival</h1>
 
-                <nav class="navegacion-principal" >
-                        <a href="#">LineUp</a>
-                        <a href="#">Galeria</a>
-                        <a href="#">Boletos</a>
-                </nav>
-
-
-            </div>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
     </header>
 
     <div class="video">
-
         <div class="overlay">
             <div class="contenedor contenido-video">
-                <h2>Techno && EDM Festival </h2>
+                <h2>Techno & EDM Festival</h2>
                 <p>Julio 2026, CDMX, México</p>
             </div>
         </div>
-
-        <video autoplay muted loop > //fdebe iniciar en silencio si queremos que se reproduzca
-            <source  src="video/dj.mp4" title="video/mp4" />
-            <source  src="video/dj.ogv" title="video/ogg" />
-            <source  src="video/dj.webm" title="video/webm" />
-
+        <video autoplay muted loop >
+            <source src="video/dj.mp4" type="video/mp4" />
+            <source src="video/dj.ogv" type="video/ogg" />
+            <source src="video/dj.webm" type="video/webm" />
         </video>
     </div>
 
-
     <section class="sobre-festival">
-
-        
-        
         <div class="imagen">
-            <img src="src/img/imagen_dj.jpg" alt="about-festival" />
+            <img  width="300" height="200" loading="lazy" src="src/img/imagen_dj.jpg" alt="Sobre Festival" />
         </div>
 
-        
         <div class="contenido-festival">
             <h2>Techno & EDM Festival</h2>
             <p class="fecha">Julio 2026, CDMX, México</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem optio assumenda
-                 praesentium omnis dolore,
-                 vero quod quam recusandae, sapiente voluptatum non a adipisci et aliquid tempore,
-                  pariatur quasi. Ex, esse?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aut assumenda ullam facilis sapiente dolore ipsam optio cumque laboriosam animi. Doloribus esse libero, quos facilis voluptatem omnis eligendi magni provident?</p>
         </div>
-
-
-    
     </section>
-
 
     <section id="lineup" class="lineup">
         <h3>Line Up</h3>
     
         <p class="dia">Viernes 21</p>
-        <div class="escenarios-contenedor ">
+        <div class="escenarios-contenedor">
             <div class="escenario bg-amarillo">
                 <p class="nombre-escenario">Techno</p>
     
@@ -176,12 +159,10 @@
         </div> <!--.escenarios-contenedor -->
     </section>
 
+    <section id="galeria" class="galeria">
+        <h3>Galería</h3>
 
-    <section id="geleria" class="galeria">
-        <h3>Galeria</h3>
-        <div class="galeria-imagenes">
-
-        </div>
+        <div class="galeria-imagenes"></div>
     </section>
 
     <section id="boletos" class="contenedor-boletos">
@@ -223,11 +204,12 @@
             </div>
         </div>
     </section>
-
+    
     <footer class="footer">
-        <p>Techno && EDM Festival. @Casi todos los derechos reservados</p>
+        <p>Techno & EDM Festival. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="src/js/app.js"></script>
+    <script src="build/js/app.js"></script>
+
 </body>
 </html>

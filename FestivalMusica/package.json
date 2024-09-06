@@ -1,9 +1,10 @@
 {
   "name": "festivalmusica",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Aprendiendo SASS y NPM",
+  "type": "module",
   "scripts": {
-    "sass": "sass --watch src/scss:dist/css ",
+    "sass": "sass --watch src/scss:build/css",
     "dev": "gulp"
   },
   "keywords": [
@@ -11,14 +12,14 @@
     "NPM",
     "Gulp"
   ],
-  "author": "Bergerat Santiago",
+  "author": "Juan De la torre @codigoconjuan",
   "license": "ISC",
-  "description": "",
-  "type": "module",
   "devDependencies": {
+    "glob": "^10.3.12",
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
-    "sass": "1.77.8"
+    "sass": "^1.75.0",
+    "sharp": "^0.33.3"
   }
 }

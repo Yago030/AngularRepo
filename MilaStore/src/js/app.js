@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollNav()
 })
 
+const botones = document.querySelectorAll('.combo-btn');
+
+botones.forEach(function(boton) {
+  boton.addEventListener('click', function() {
+    const combo = boton.dataset.combo;
+    window.open(`https://api.whatsapp.com/send?phone=+54 9 2604 33-5544&text=Hola,+estoy+interesado+en+el+combo+${combo}`, '_blank');
+  });
+});
+
+
+
 function navegacionFija() {
     const header = document.querySelector('.header')
     const sobreFestival = document.querySelector('.sobre-festival')
@@ -20,7 +31,7 @@ function navegacionFija() {
 
 function crearGaleria() {
 
-    const CANTIDAD_IMAGENES = 16
+    const CANTIDAD_IMAGENES = 12
     const galeria = document.querySelector('.galeria-imagenes')
 
     for(let i = 1; i <= CANTIDAD_IMAGENES; i++) {

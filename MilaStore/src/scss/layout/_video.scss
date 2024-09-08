@@ -35,14 +35,17 @@
         color: v.$blanco;
         font-size: 7rem;
         margin: 0;
+        margin-bottom: 24px;
     }
     p {
-        background-color: v.$rosa;
+        background-color: rgba(v.$rosa, 0.8);
         display: inline-block;
         padding: 1rem 2rem;
         color: v.$blanco;
         font-size: 2.4rem;
         font-weight: 700;
         margin: 0;
+        border-radius: 8px;
+        
     }
 }

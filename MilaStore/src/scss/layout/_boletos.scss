@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .contenedor-boletos {
-    background-color: v.$verde;
+    background-image: linear-gradient(to bottom, #34C759, #090e0a);
     h3 {
         color: v.$blanco;
     }
@@ -35,6 +35,7 @@
             text-align: center;
             color: v.$blanco;
             margin: 0;
+            line-height: 18px;
         }
     }
     &-header {

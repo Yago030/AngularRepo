@@ -1,7 +1,9 @@
 @use 'base/variables' as v;
 
 .footer {
-    background-color: v.$rosa;
+    // background-color: v.$rosa;
+    background-color: #000;
+
     padding: 2rem 0;
     p {
         margin: 0;
@@ -9,3 +11,34 @@
         text-align: center;
     }
 }
+
+
+.footer {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-contenido {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-info {
+    width: 30%;
+  }
+  
+  .footer-derechos {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .footer-whatsapp {
+    width: 30%;
+    text-align: right;
+  }

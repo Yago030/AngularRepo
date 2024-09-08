@@ -12,6 +12,11 @@
         font-size: 3rem;
         text-transform: uppercase;
     }
+
+   img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  width: auto;
+}
 }
 
 .escenarios-contenedor {
@@ -19,6 +24,8 @@
     @include m.tablet {
         @include m.grid(2);
     }
+
+    
 }
 .escenario {
     padding-top: 2rem;
@@ -43,14 +50,29 @@
 }
 
 .bg-amarillo {
+    margin-bottom:1rem;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+
+    border-radius: 16px;
     background-color: v.$amarillo;
     li:nth-child(odd) {
         background-color: lighten(v.$amarillo, 5%);
     }
+
 }
 .bg-verde {
+    margin-bottom:1rem;
+
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
+
+    justify-content: center;
+    border-radius: 16px;
+
     background-color: v.$verde;
     li:nth-child(odd) {
         background-color: lighten(v.$verde, 5%);
     }
+ 
+
 }

@@ -14,13 +14,12 @@
 
 
 .footer {
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  background-color: #000000;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   .footer-contenido {
     width: 80%;
     margin: 0 auto;
@@ -28,17 +27,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .footer-info {
     width: 30%;
   }
-  
+
   .footer-derechos {
     width: 20%;
     text-align: center;
   }
-  
+
   .footer-whatsapp {
     width: 30%;
     text-align: right;
   }
+}

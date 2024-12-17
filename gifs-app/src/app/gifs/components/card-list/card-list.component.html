@@ -1,32 +1,12 @@
 <div class="row">
 
+    <gifs-card
+      *ngFor="let gif of gifs"
+      [gif]="gif"
+      class="col-md-3 col-sm-6"
+    ></gifs-card>
 
-
-<gifs-card
-  *ngFor="let gif of gifs "
-  [gif]="gif"
-  class="col-md-3 col-sm-6"
-  ></gifs-card>
-
-
-
-  <!-- <div *ngFor="let gif of gifs"  class="col-md-3 col-sm-6">
-
-    <div class="card mb-2 text-center bg-dark" >
-
-      <img [src]="gif.images.downsized.url"
-       [alt]="gif.alt_text"
-      class="card-img-top"
-       >
-
-      <div class="card-body text-white">
-        <p  class="card-text">
-          {{ gif.title}}
-        </p>
-      </div>
-
-    </div>
-  </div> -->
 
 </div>
+
 

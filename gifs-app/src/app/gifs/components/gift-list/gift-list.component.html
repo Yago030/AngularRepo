@@ -1,0 +1,5 @@
+ <div class="columns-2 md:columns-4 gap-4">
+  @for (gif of gifs(); track gif) {
+    <img [src]="gif.url" class="mb-4 w-full rounded-lg" />
+  }
+</div>

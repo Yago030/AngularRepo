@@ -1,0 +1,3 @@
+<section class="py-5 h-screen overflow-y-scroll" (scroll)="onScroll($event)" #groupDiv>
+  <app-gift-list [gifs]="GifService.trendingGifs()" />
+</section>
